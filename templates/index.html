@@ -1,0 +1,35 @@
+{% extends "base/base.html"%}
+{% block css %}<link rel="stylesheet" href="{{url_for('static',filename='css/home.css')}}">{% endblock %}
+{% block body %}
+<div class="body">
+	<div class="hold">
+	<a href="/" style="text-decoration: none;" >	<header>
+			<div class="icon">
+			 <img src="{{url_for('static',filename='images/icon.png')}}">
+			</div>
+			<div class="name">
+				<h1>{{app}}</h1>
+			</div>
+		</header></a>
+		<div class="content">
+			<div class="innerc">
+			<form method="post" >
+				<div class="ind">
+					<h3>Create Season</h3>
+				</div>
+				<div class="input">
+					<input autocomplete="off"  type="text" placeholder="Name" maxlength="15"  name="user" id="user" required="required">
+				    <ruby id="count"></ruby>
+				</div>
+				
+				<div class="submit">
+					<button type="submit" >Enter season</button>
+				</div>
+			</form>
+			</div>
+			
+		</div>
+	</div>
+</div>
+{% endblock %}
+{% block js %}<script defer src="{{url_for('static',filename='js/home.js')}}"></script>{% endblock %}

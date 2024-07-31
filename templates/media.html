@@ -1,0 +1,128 @@
+{% extends "base/base.html" %}
+{% block body %}
+ <header>
+  <div class="bc">
+  <a href="home" ><button><i class="fa fa-arrow-left"></i></button></a>
+  </div>
+  <div>
+   <a class="name" href="media" > <img src="{{url_for('static',filename='images/icon.png')}}" >
+   <h1>{{app}}</h1></a>
+  </div>
+ </header>
+ <div class="content">
+ <div class="select">
+  <select id="origin">
+   <option><i class="fa-brands fa-youtube"></i> YouTube</option>
+   <option><i class="fa-brands fa-facebook"></i> Facebook</option>
+   <option>Others</option>
+  </select>
+  </div>
+  <div>
+   <div class="input">
+    <input id="url" type="text" placeholder="Url">
+    <button id="send"><i class="fa fa-arrow-right"></i></button>
+ </div>
+ <div class="get">
+	<p class="print"></p>
+  <button class="copy">copy <i class="fa-light fa-copy"></i></button>
+ </div>
+ <div class="warn">
+  <p>WARNING: Do not change anything when coppying,
+  its may change the view of the website,
+  do not change or add the width every thing is calculated, thankyou</p>
+ </div>
+ <style type="text/css">
+  *{
+   margin: 0;
+   padding: 0;
+  }
+  header {
+   display: flex;
+   border-bottom: 1px solid #000;
+  }
+  img{
+   width: 30px;
+   height: 30px;
+   margin-right: 5px;
+  }
+  .bc button{
+   background: none;
+   border:none;
+   width: 50px;
+  }
+  .name{
+   display: flex;
+   margin-left:20px;
+  }
+  .content{
+   display: grid;
+   justify-content: center;
+   width: 100vw;
+  }
+  select {
+    width: 300px; 
+    height: 50px;
+  }
+  select :focus,input:focus,button:focus{
+   outline: none;
+  }
+  .select{
+   display: flex;
+   justify-content:center;
+   margin-top: 5px;
+  }
+  .input{
+   display: flex;
+   justify-content: center;
+   margin-top: 5px;
+  }
+  .input input{
+   height: 40px;
+   width: 200px;
+  }
+  .input button{
+   border:none;
+   width: 70px;
+   background-color: #0075ff;
+   color: #fff;
+   border-radius: 5px;
+   margin-left: 3px;
+  }
+  .get{
+   display: grid;
+   justify-content:center;
+   margin-top: 5px;
+  }
+  .print{
+   background-color: #000;
+   height: 200px;
+   width: 250px;
+   border-radius: 5px;
+   overflow:scroll;
+  }
+  .copy{
+   background: #000;
+   color: #fff;
+   margin-top: 3px;
+   width: 70px;
+   border:none;
+   border-radius: 2px;
+  }
+  .warn{
+   display: flex;
+   justify-content: center;
+   margin-top: 3px;
+  }
+  .warn p{
+  display: flex;
+  justify-content:center;
+   background-color: yellow;
+   margin: 10px;
+   border-radius: 10px;
+   text-indent: 10px;
+   text-align: center;
+   border: 3px solid #ddd;
+  }
+ </style>
+{% endblock %}
+{% block js %}<script defer src="{{url_for('static',filename='js/media.js')}}"></script>{% endblock %}

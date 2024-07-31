@@ -1,0 +1,52 @@
+{% extends "base/base.html"%}
+{% block css %}
+<link rel="stylesheet" href="{{url_for('static',filename='css/chat.css')}}">{% endblock %}
+{% block body %}
+ <div class="hold">
+  <header>
+   <div class="left">
+     <div class="logo" >
+      	<img src="{{url_for('static',filename='images/icon.png')}}">
+     </div>
+     <div class="name" >
+     	<h1>{{app}}</h1>
+     </div>
+   </div>
+   <div class="right" >
+   	<div class="user" >
+   		<p>{{newuser}}</p>
+   	</div>
+   	<div class="end">
+   		<a href="close" ><button>Logout</button></a>
+   	</div>
+   </div>
+  </header>
+  <div class="msgbox">
+  	
+  </div>
+  <div class="footer">
+   <div class="media">
+    <a href="media" >
+    	<button>Media <i class="fa-light fa-play"></i></button>
+    </a>
+    <a href="home" ><button><i class="fa fa-eye"></i></button></a>
+   </div>
+  	<form method="post" >
+  		<div class="detete">
+  			<button type="button" id="delete" class="del"><i class="fa-light fa-trash-can"></i></button>
+  		</div>
+  		<div class="input">
+  			<textarea placeholder="message" id="message"  name="message" required></textarea>
+  		</div>
+  		<div class="submit">
+  			<button type="submit"><i class="fa fa-arrow-right" ></i></button>
+  		</div>
+  	</form>
+  </div>
+ </div>
+
+    {% block js %}
+    <script defer src="{{url_for('static',filename='js/chat.js')}}"></script>
+    <script src="{{url_for('static',filename='js/get.js')}}"></script>
+    {% endblock %}
+{% endblock %}
