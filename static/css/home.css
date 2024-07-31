@@ -1,0 +1,89 @@
+.body {
+	height: 100vh;
+	width: 100vw;
+	background-image:url("back.png");
+	background-size: cover;
+	background-repeat:no-repeat;
+}
+header{
+ display: flex;
+ background-color: #E437474F;
+ justify-content:center;
+ align-items: center;
+ position:sticky;
+ top: 0;
+}.icon img {
+ width: 30px;
+}
+.name{
+ color: #fff;
+ display: flex;
+ align-items: center;
+ 
+}
+.content{
+ display: grid;
+ border: none;
+ justify-content: center;
+ margin-top: 22px;
+ height: 300px;
+ align-items: center;
+}
+.innerc{
+ display: grid;
+ background-color: #E5263238;
+ border: solid 1px #000;
+ width: 90vw;
+ justify-content: center;
+ height: 280px;
+ border-radius: 5px;
+ align-items: center;
+}
+form{
+ display: grid;
+ width: 90vw;
+ height: 280px;
+ border: none;
+ background:transparent;
+ justify-content: center;
+ align-items: center;
+}
+.ind{
+ display: flex;
+ justify-content: center;
+}
+.ind h3{
+ color: #fff;
+}
+input:focus,button:focus{
+ outline: none;
+}
+.ind{
+ display: grid;
+}
+.input input{
+  height: 40px;
+  width: 200px;
+  background:transparent;
+  color: #fff;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+ruby{
+ color: #fff;
+}
+.submit{
+ display: flex;
+ justify-content: center;
+}
+.submit button{
+ background: #0165ff;
+ color: #fff;
+ border: none;
+ border-radius: 5px;
+ height: 30px;
+}
+a{
+ text-decoration:none;
+}

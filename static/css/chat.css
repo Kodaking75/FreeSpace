@@ -1,0 +1,164 @@
+*{
+ margin: 0;
+ padding: 0;
+}
+.hold{
+	height: fit-content;
+	width: 100vw;
+	background:url("back.png");
+}
+header{
+	display: flex;
+	justify-content: space-between;
+	background-color: #FB21343C;
+}
+.left{
+	display: flex;
+	align-items: center;
+}
+.logo img{
+	width: 35px;
+}
+.name h1{
+	 margin-left: 5px;
+	 color: #fff;
+	 
+}
+.right{
+	display: flex;
+}
+.user p{
+ color: #fff;
+ margin-top: 7px;
+ margin-right: 3px;
+}
+.end button{
+	background-color: #000;
+	height: 40px;
+	border: none;
+	border-radius: 5px;
+	width: 60px;
+	margin-top: 2px;
+	color: #fff;
+	margin-right: 2px;
+}
+a{
+ text-decoration: none;
+}
+input:focus,textarea:focus,button:focus{
+	outline: none;
+}
+.footer{
+ display: grid;
+ height: fit-content;
+ background: #000;
+}
+form{
+ display: flex;
+ justify-content: center;
+ align-content: center;
+}
+.media{
+	display: flex;
+}
+.media button{
+	color: #fff;
+	background: #0075ff;
+	height: 30px;
+	border: none;
+	border-radius: 3px;
+	width: 70px;
+	margin-right: 20px;
+	margin-bottom: 2px;
+}
+textarea{
+	height: 40px;
+	border: 1px solid #eee;
+	background:transparent;
+	color: #fff;
+	width: 230px;
+}
+.del{
+	height: 40px;
+	width: 50px;
+	background:transparent;
+	border: none;
+	color: #fff;
+}
+.submit button{
+	height: 35px;
+	width: 65px;
+	border: none;
+	border-radius: 3px;
+	font-size:larger;
+	margin-top: 3px;
+	color: #fff;
+	background: #0075ff;
+	margin-left: 5px;
+}
+.msgbox{
+ display: grid;
+ justify-content: center;
+ border: none;
+ height: 80vh;
+ overflow:scroll;
+ background: #000;
+}
+.messagehold{
+  border: none;
+  height: fit-content;
+  width: 350px;
+  margin-top: 3px;
+}
+.profile{
+	display: flex;
+	background: #222;
+	width: fit-content;
+	align-items: center;
+	border-radius: 5px;
+	margin-left: 20px;
+}
+.bprofile img{
+  width: 50px;
+  height: 50px;
+}
+.details p,ruby{
+  color: #fff;
+  margin-left: 10px;
+}
+.jsd{
+	display: flex;
+	justify-content: center;
+}
+.jsdhold{
+ 	display: grid;
+ 	background: #222;
+ 	width: 330px;
+ 	margin-top: 5px;
+ 	border-radius: 5px;
+ 	height: fit-content;
+}
+.jsdhold p{
+	display: grid;
+	color: #fff;
+	margin-left: 3px;
+	height: fit-content;
+	width: 330px;
+	justify-content: center;
+}
+iframe,video,img,audio{
+  width: 329px;
+  margin-left: 3px;
+}
+-webkit-scrollbar{
+  outline: none;
+}
+.print div{
+ width: 329px;
+}
+blockquote {
+	width: 329px;
+}
+.reload{
+	
+}
